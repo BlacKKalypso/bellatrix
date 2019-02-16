@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  height: 99vh;
+}
+
+section > div {
+  width: 100%;
+}
+
+@media screen and (min-width: $sm) {
+  section > div {
+    width: 50%;
+  }
+}
+
+h2 {
+  position: relative;
+  padding-bottom: 40px;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2:after{
+  content: '';
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  width: 50px;
+  border-bottom: solid 2px $black;
+  z-index: 1;
+}
+
+h3 {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.clear{
+  clear: both;
+}
