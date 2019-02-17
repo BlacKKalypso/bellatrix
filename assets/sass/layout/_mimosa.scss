@@ -1,25 +1,22 @@
-#mimosa{
+#mimosa {
   position: relative;
-overflow: hidden;
-  
-  h2:after{
+  overflow: hidden;
+
+  h2:after {
     height: 100vh;
   }
 
-  .image{
+  .image {
     position: absolute;
     right: 0;
-    img{
+
+    img {
       width: 100%;
     }
   }
 
-  .description{
+  .description {
     position: absolute;
     left: 0;
-
-    img{
-      margin: $top-space auto 5% 40%;
-    }
   }
 }

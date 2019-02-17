@@ -1,0 +1,22 @@
+#coffee-shop{
+  position: relative;
+  overflow: hidden;
+
+  .image{
+    position: absolute;
+    right: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .description{
+    position: absolute;
+    left: 0;
+
+    h2{
+        margin: $top-space 20% 5% 40%;
+    }
+  }
+}

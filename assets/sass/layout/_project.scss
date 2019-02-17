@@ -1,0 +1,18 @@
+#project{
+  position: relative;
+  overflow: hidden;
+
+  .image{
+    position: absolute;
+    left: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .description{
+    position: absolute;
+    right: 0;
+  }
+}

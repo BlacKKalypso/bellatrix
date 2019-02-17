@@ -55,6 +55,9 @@ h3 {
   font-weight: lighter;
   text-align: center; }
 
+.description img {
+  margin: 125px auto 5% 40%; }
+
 .clear {
   clear: both; }
 
@@ -118,10 +121,6 @@ header {
     background-color: #eeead0; }
   #about .description {
     display: inline-block; }
-    #about .description .hatch {
-      margin-top: 250px;
-      margin-bottom: 50px;
-      text-align: center; }
 
 #mimosa {
   position: relative;
@@ -136,5 +135,54 @@ header {
   #mimosa .description {
     position: absolute;
     left: 0; }
-    #mimosa .description img {
-      margin: 250px auto 5% 40%; }
+
+#project {
+  position: relative;
+  overflow: hidden; }
+  #project .image {
+    position: absolute;
+    left: 0; }
+    #project .image img {
+      width: 100%; }
+  #project .description {
+    position: absolute;
+    right: 0; }
+
+#coffee-shop {
+  position: relative;
+  overflow: hidden; }
+  #coffee-shop .image {
+    position: absolute;
+    right: 0; }
+    #coffee-shop .image img {
+      width: 100%; }
+  #coffee-shop .description {
+    position: absolute;
+    left: 0; }
+    #coffee-shop .description h2 {
+      margin: 125px 20% 5% 40%; }
+
+#amber {
+  position: relative;
+  overflow: hidden; }
+  #amber .image {
+    position: absolute;
+    left: 0; }
+    #amber .image img {
+      width: 100%; }
+  #amber .description {
+    position: absolute;
+    right: 0; }
+
+footer .info {
+  display: flex;
+  color: #e3e3e3;
+  background-color: #2a2a2a; }
+  footer .info .bellatrix,
+  footer .info .contact,
+  footer .info .tweet {
+    width: 33%; }
+
+footer p {
+  color: #e3e3e3;
+  background-color: #2a2a2a; }

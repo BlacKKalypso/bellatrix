@@ -1,0 +1,31 @@
+footer {
+
+  .info {
+    display: flex;
+    color: $white;
+    background-color: $black;
+
+    .bellatrix,
+    .contact,
+    .tweet {
+      width: 33%;
+    }
+
+    .bellatrix {
+
+    }
+
+    .contact {
+
+    }
+
+    .tweet {
+
+    }
+  }
+
+  p {
+    color: $white;
+    background-color: $black;
+  }
+}
