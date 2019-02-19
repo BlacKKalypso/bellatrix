@@ -14,53 +14,59 @@
   margin: 0;
   padding: 0; }
 
-section {
-  height: 99vh; }
-
 section > div {
   width: 100%; }
 
-@media screen and (min-width: 768px) {
-  section > div {
-    width: 50%; } }
-
 h2 {
-  position: relative;
-  padding-bottom: 40px;
   font-family: 'Merriweather', serif;
   text-transform: uppercase;
   text-align: center; }
 
-h2:after {
-  content: '';
-  position: absolute;
-  top: 65%;
-  left: 45%;
-  width: 50px;
-  border-bottom: solid 2px #2a2a2a;
-  z-index: 1; }
+@media screen and (min-width: 768px) {
+  section > div {
+    width: 50%;
+    height: 99vh; }
+  h2 {
+    position: relative;
+    padding-bottom: 40px; }
+  h2:after {
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    width: 50px;
+    border-bottom: solid 2px #2a2a2a;
+    z-index: 1; } }
 
-h3 {
-  padding-top: 10px;
-  padding-bottom: 50px;
+.description h3,
+.description p {
+  margin: auto 2vh; }
+
+.description h3 {
+  padding: 3vh 1vh;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   text-align: center;
   text-transform: uppercase; }
 
-.description h3,
 .description p {
-  margin: auto 10%; }
-
-.description p {
+  padding: 3vh 1vh;
   font-family: 'Merriweather', serif;
   font-style: italic;
   font-weight: lighter;
   text-align: center; }
 
-.description img {
-  margin: 125px auto 5% 40%; }
+@media screen and (min-width: 768px) {
+  .description h3,
+  .description p {
+    margin: auto 10%; }
+  .description h3 {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 16px; }
+  .description img {
+    margin: 125px auto 5% 40%; } }
 
 .clear {
   clear: both; }
@@ -72,6 +78,11 @@ header {
     list-style-type: none; }
     header ul li {
       display: none; }
+    header ul li:first-child {
+      display: block; }
+      header ul li:first-child img {
+        width: 20%;
+        padding: 1vh 2vh; }
 
 @media screen and (min-width: 768px) {
   header {
@@ -117,27 +128,41 @@ header {
       header nav ul li:nth-child(14) {
         order: 15; } }
 
-#about {
-  display: flex; }
-  #about #yellow {
-    display: block;
-    background-color: #eeead0; }
-  #about .description {
-    display: inline-block; }
+#about #yellow {
+  display: block;
+  height: 100vh;
+  background-color: #eeead0; }
+
+#about .description {
+  display: block; }
+  #about .description .hatch {
+    padding: 5vh 1vh;
+    text-align: center; }
+
+@media screen and (min-width: 768px) {
+  #about {
+    display: flex; }
+    #about .description {
+      display: inline-block; } }
 
 #mimosa {
-  position: relative;
   overflow: hidden; }
-  #mimosa h2:after {
-    height: 100vh; }
-  #mimosa .image {
-    position: absolute;
-    right: 0; }
-    #mimosa .image img {
-      width: 100%; }
+  #mimosa .image img {
+    width: 100%; }
   #mimosa .description {
-    position: absolute;
-    left: 0; }
+    text-align: center; }
+
+@media screen and (min-width: 768px) {
+  #mimosa {
+    position: relative; }
+    #mimosa h2:after {
+      height: 100vh; }
+    #mimosa .image {
+      position: absolute;
+      right: 0; }
+    #mimosa .description {
+      position: absolute;
+      left: 0; } }
 
 #project {
   position: relative;
@@ -166,18 +191,23 @@ header {
     #coffee-shop .description h2 {
       margin: 125px 20% 5% 20%; }
 
-#amber {
-  position: relative;
-  overflow: hidden; }
-  #amber .image {
-    position: absolute;
-    left: 0; }
-    #amber .image img {
-      width: 100%; }
-  #amber .description {
-    position: absolute;
-    right: 0;
-    top: 125px; }
+#amber .image img {
+  width: 100%; }
+
+#amber .description img {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  #amber {
+    position: relative;
+    overflow: hidden; }
+    #amber .image {
+      position: absolute;
+      left: 0; }
+    #amber .description {
+      position: absolute;
+      right: 0;
+      top: 125px; } }
 
 footer {
   font-family: 'Lato', sans-serif;

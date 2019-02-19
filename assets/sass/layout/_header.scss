@@ -8,6 +8,14 @@ header {
     li{
       display: none;
     }
+
+    li:first-child{
+      display: block;
+      img{
+        width: 20%;
+        padding: 1vh 2vh;
+      }
+    }
   }
 }
 

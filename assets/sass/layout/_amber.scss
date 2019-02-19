@@ -1,19 +1,29 @@
 #amber{
-  position: relative;
-  overflow: hidden;
-
   .image{
-    position: absolute;
-    left: 0;
+  img{
+    width:100%;
+  }
+}
 
+  .description{
     img{
-      width: 100%;
+      display: none;
     }
   }
 
-  .description{
-    position: absolute;
-    right: 0;
-    top: $top-space;
+  @media screen and (min-width: $sm) {
+    position: relative;
+    overflow: hidden;
+
+    .image {
+      position: absolute;
+      left: 0;
+    }
+
+    .description {
+      position: absolute;
+      right: 0;
+      top: $top-space;
+    }
   }
 }

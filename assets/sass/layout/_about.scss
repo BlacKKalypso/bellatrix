@@ -1,12 +1,26 @@
-#about {
-  display: flex;
-
+#about{
   #yellow {
     display: block;
+    height: 100vh;
     background-color: $yellow;
   }
 
-  .description {
-    display: inline-block;
+  .description{
+    display: block;
+
+    .hatch{
+      padding: 5vh 1vh;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: $sm) {
+  #about {
+    display: flex;
+
+    .description {
+      display: inline-block;
+    }
   }
 }

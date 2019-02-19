@@ -1,22 +1,30 @@
-#mimosa {
-  position: relative;
+#mimosa{
   overflow: hidden;
-
-  h2:after {
-    height: 100vh;
-  }
-
-  .image {
-    position: absolute;
-    right: 0;
-
-    img {
+  .image{
+    img{
       width: 100%;
     }
   }
+  .description{
+    text-align: center;
+  }
+}
 
-  .description {
-    position: absolute;
-    left: 0;
+@media screen and (min-width: $sm) {
+  #mimosa {
+    position: relative;
+    h2:after {
+      height: 100vh;
+    }
+
+    .image {
+      position: absolute;
+      right: 0;
+    }
+
+    .description {
+      position: absolute;
+      left: 0;
+    }
   }
 }
