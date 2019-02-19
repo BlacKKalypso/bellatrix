@@ -46,6 +46,11 @@ h3 {
 }
 
 .description {
+  h3,
+  p{
+    margin:auto 10%;
+  }
+
   p {
     font-family: 'Merriweather', serif;
     font-style: italic;

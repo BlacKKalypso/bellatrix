@@ -1,13 +1,12 @@
-#about{
-  display:flex;
+#about {
+  display: flex;
 
-  #yellow{
+  #yellow {
     display: block;
-    position: relative;
     background-color: $yellow;
   }
 
-  .description{
+  .description {
     display: inline-block;
   }
 }

@@ -14,5 +14,9 @@
   .description{
     position: absolute;
     right: 0;
+
+    h2{
+      margin: $top-space 20% 5% 20%;
+    }
   }
 }

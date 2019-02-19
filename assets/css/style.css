@@ -49,6 +49,10 @@ h3 {
   text-align: center;
   text-transform: uppercase; }
 
+.description h3,
+.description p {
+  margin: auto 10%; }
+
 .description p {
   font-family: 'Merriweather', serif;
   font-style: italic;
@@ -117,7 +121,6 @@ header {
   display: flex; }
   #about #yellow {
     display: block;
-    position: relative;
     background-color: #eeead0; }
   #about .description {
     display: inline-block; }
@@ -147,6 +150,8 @@ header {
   #project .description {
     position: absolute;
     right: 0; }
+    #project .description h2 {
+      margin: 125px 20% 5% 20%; }
 
 #coffee-shop {
   position: relative;
@@ -157,10 +162,9 @@ header {
     #coffee-shop .image img {
       width: 100%; }
   #coffee-shop .description {
-    position: absolute;
-    left: 0; }
+    position: absolute; }
     #coffee-shop .description h2 {
-      margin: 125px 20% 5% 40%; }
+      margin: 125px 20% 5% 20%; }
 
 #amber {
   position: relative;
@@ -172,17 +176,88 @@ header {
       width: 100%; }
   #amber .description {
     position: absolute;
-    right: 0; }
+    right: 0;
+    top: 125px; }
 
-footer .info {
-  display: flex;
-  color: #e3e3e3;
-  background-color: #2a2a2a; }
-  footer .info .bellatrix,
-  footer .info .contact,
-  footer .info .tweet {
-    width: 33%; }
-
-footer p {
-  color: #e3e3e3;
-  background-color: #2a2a2a; }
+footer {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px; }
+  @media screen and (min-width: 768px) {
+    footer .info {
+      display: flex;
+      padding-top: 5%;
+      color: #e3e3e3;
+      background-color: #2a2a2a; }
+      footer .info .bellatrix,
+      footer .info .contact,
+      footer .info .tweet {
+        width: 30%; }
+      footer .info .bellatrix {
+        position: relative;
+        text-align: center; }
+        footer .info .bellatrix p:before {
+          position: absolute;
+          left: 45%;
+          top: 24vh;
+          margin-bottom: 2vh;
+          width: 50px;
+          content: "";
+          border-bottom: solid 2px #e3e3e3;
+          z-index: 1; }
+        footer .info .bellatrix p {
+          padding: 5vh 16vh;
+          text-transform: uppercase; }
+      footer .info .contact h4 {
+        margin-bottom: 5vh;
+        font-size: 2vh;
+        text-transform: uppercase; }
+      footer .info .contact ul {
+        list-style-type: none; }
+      footer .info .contact li:last-child {
+        margin-top: 2vh; }
+      footer .info .contact li p {
+        display: inline-block;
+        margin-right: 1vh; }
+      footer .info .contact li i {
+        margin-left: 3vh; }
+      footer .info .tweet h4 {
+        margin-bottom: 5vh;
+        font-size: 2vh;
+        text-transform: uppercase; }
+      footer .info .tweet div {
+        display: flex; }
+        footer .info .tweet div img {
+          margin-right: 2vh; }
+        footer .info .tweet div p {
+          padding-top: 1vh;
+          width: 60%; }
+          footer .info .tweet div p span {
+            color: #4d4d4d; }
+      footer .info .tweet .first {
+        margin-bottom: 2vh; }
+    footer .make {
+      position: relative;
+      border-top: 3px solid #393939;
+      background-color: #2a2a2a;
+      text-align: center; }
+      footer .make p:before {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        width: 25px;
+        content: "";
+        border-bottom: solid 1px #e3e3e3; }
+      footer .make p {
+        padding: 3vh 10vh;
+        font-family: droid-serif, serif;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 700;
+        color: #e3e3e3; }
+      footer .make p:after {
+        position: absolute;
+        top: 50%;
+        right: 40%;
+        width: 25px;
+        content: "";
+        border-bottom: solid 1px #e3e3e3; } }
