@@ -1,22 +1,28 @@
 #project{
-  position: relative;
-  overflow: hidden;
-
   .image{
-    position: absolute;
-    left: 0;
-
     img{
       width: 100%;
     }
   }
+}
+@media screen and (min-width: $sm) {
+  #project {
+    position: relative;
+    overflow: hidden;
+    height: 99vh;
 
-  .description{
-    position: absolute;
-    right: 0;
+    .image {
+      position: absolute;
+      left: 0;
+    }
 
-    h2{
-      margin: $top-space 20% 5% 20%;
+    .description {
+      position: absolute;
+      right: 0;
+
+      h2 {
+        margin: $top-space 20% 5% 20%;
+      }
     }
   }
 }

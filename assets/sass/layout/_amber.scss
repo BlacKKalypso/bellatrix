@@ -1,29 +1,35 @@
-#amber{
-  .image{
-  img{
-    width:100%;
+#amber {
+  .image {
+    img {
+      width: 100%;
+    }
   }
-}
 
-  .description{
-    img{
+  .description {
+    img {
       display: none;
     }
   }
 
   @media screen and (min-width: $sm) {
-    position: relative;
-    overflow: hidden;
+    #amber {
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
 
-    .image {
-      position: absolute;
-      left: 0;
-    }
+      .image {
+        img{
+          width: 100%;
+        }
+      }
 
-    .description {
-      position: absolute;
-      right: 0;
-      top: $top-space;
+      .description {
+        top: $top-space;
+
+        img{
+          display: block;
+        }
+      }
     }
   }
 }

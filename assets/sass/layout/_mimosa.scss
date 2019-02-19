@@ -1,5 +1,4 @@
 #mimosa{
-  overflow: hidden;
   .image{
     img{
       width: 100%;
@@ -7,24 +6,32 @@
   }
   .description{
     text-align: center;
+
+    img{
+      margin: 2vh auto;
+    }
   }
 }
 
 @media screen and (min-width: $sm) {
   #mimosa {
     position: relative;
-    h2:after {
-      height: 100vh;
-    }
+    height: 99vh;
 
     .image {
       position: absolute;
       right: 0;
+      overflow: hidden;
+      height: 99vh;
     }
 
     .description {
       position: absolute;
       left: 0;
+
+      img{
+        margin: $top-space 0 20px 0;
+      }
     }
   }
 }

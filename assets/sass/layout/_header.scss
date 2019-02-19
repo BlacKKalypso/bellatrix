@@ -38,8 +38,10 @@ header {
         }
 
         li:nth-child(1) {
-          padding-right: 140px;
-          padding-left: 140px;
+          padding-top: 0;
+          padding-bottom: 0;
+          width: 30%;
+          text-align: center;
           order: 6;
         }
         li:nth-child(2) {order: 1;}

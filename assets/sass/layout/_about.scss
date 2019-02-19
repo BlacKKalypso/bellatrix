@@ -21,6 +21,11 @@
 
     .description {
       display: inline-block;
+
+      .hatch{
+        padding: 0;
+        text-align: left;
+      }
     }
   }
 }

@@ -24,8 +24,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   section > div {
-    width: 50%;
-    height: 99vh; }
+    width: 50%; }
   h2 {
     position: relative;
     padding-bottom: 40px; }
@@ -98,8 +97,10 @@ header {
         display: block;
         padding-right: 15px; }
       header nav ul li:nth-child(1) {
-        padding-right: 140px;
-        padding-left: 140px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 30%;
+        text-align: center;
         order: 6; }
       header nav ul li:nth-child(2) {
         order: 1; }
@@ -143,44 +144,55 @@ header {
   #about {
     display: flex; }
     #about .description {
-      display: inline-block; } }
+      display: inline-block; }
+      #about .description .hatch {
+        padding: 0;
+        text-align: left; } }
 
-#mimosa {
-  overflow: hidden; }
-  #mimosa .image img {
-    width: 100%; }
-  #mimosa .description {
-    text-align: center; }
+#mimosa .image img {
+  width: 100%; }
+
+#mimosa .description {
+  text-align: center; }
+  #mimosa .description img {
+    margin: 2vh auto; }
 
 @media screen and (min-width: 768px) {
   #mimosa {
-    position: relative; }
-    #mimosa h2:after {
-      height: 100vh; }
+    position: relative;
+    height: 99vh; }
     #mimosa .image {
       position: absolute;
-      right: 0; }
+      right: 0;
+      overflow: hidden;
+      height: 99vh; }
     #mimosa .description {
       position: absolute;
-      left: 0; } }
+      left: 0; }
+      #mimosa .description img {
+        margin: 125px 0 20px 0; } }
 
-#project {
-  position: relative;
-  overflow: hidden; }
-  #project .image {
-    position: absolute;
-    left: 0; }
-    #project .image img {
-      width: 100%; }
-  #project .description {
-    position: absolute;
-    right: 0; }
-    #project .description h2 {
-      margin: 125px 20% 5% 20%; }
+#project .image img {
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  #project {
+    position: relative;
+    overflow: hidden;
+    height: 99vh; }
+    #project .image {
+      position: absolute;
+      left: 0; }
+    #project .description {
+      position: absolute;
+      right: 0; }
+      #project .description h2 {
+        margin: 125px 20% 5% 20%; } }
 
 #coffee-shop {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 99vh; }
   #coffee-shop .image {
     position: absolute;
     right: 0; }
@@ -198,16 +210,16 @@ header {
   display: none; }
 
 @media screen and (min-width: 768px) {
-  #amber {
-    position: relative;
+  #amber #amber {
+    display: flex;
+    flex-direction: row;
     overflow: hidden; }
-    #amber .image {
-      position: absolute;
-      left: 0; }
-    #amber .description {
-      position: absolute;
-      right: 0;
-      top: 125px; } }
+    #amber #amber .image img {
+      width: 100%; }
+    #amber #amber .description {
+      top: 125px; }
+      #amber #amber .description img {
+        display: block; } }
 
 footer {
   font-family: 'Lato', sans-serif;
