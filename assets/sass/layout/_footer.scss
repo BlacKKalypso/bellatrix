@@ -2,19 +2,30 @@ footer {
   font-family: 'Lato', sans-serif;
   font-size: 12px;
 
-  .info{
+  .info {
     color: $white;
     background-color: $black;
 
-    .bellatrix, .tweet{
+    .bellatrix, .tweet {
       display: none;
+    }
+
+    .contact {
+      ul {
+        li {
+          img {
+            display: none;
+          }
+        }
+      }
     }
   }
 
 
-#theme{
-  display: none;
-}
+  #theme {
+    display: none;
+  }
+
   @media screen and (min-width: $sm) {
     .info {
       display: flex;
@@ -53,30 +64,36 @@ footer {
           margin-bottom: 5vh;
           font-size: 2vh;
           text-transform: uppercase;
-        }
 
-        ul {
-          list-style-type: none;
-        }
-
-        li:last-child {
-          margin-top: 2vh;
-        }
-
-        li {
-          p {
-            display: inline-block;
-            margin-right: 1vh;
+          ul {
+            list-style-type: none;
           }
 
-          i {
-            margin-left: 3vh;
+          li:last-child {
+            margin-top: 2vh;
+          }
+
+          li {
+
+            p {
+              display: inline-block;
+              margin-right: 1vh;
+            }
+
+            img{
+              display: block;
+            }
+            i {
+              margin-left: 3vh;
+            }
           }
         }
       }
 
+
       .tweet {
         display: block;
+
         h4 {
           margin-bottom: 5vh;
           font-size: 2vh;
@@ -121,7 +138,7 @@ footer {
         border-bottom: solid 1px $white;
       }
 
-      #theme{
+      #theme {
         display: block;
         padding: 3vh 10vh;
         font-family: droid-serif, serif;

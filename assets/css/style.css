@@ -251,6 +251,8 @@ footer {
     background-color: #2a2a2a; }
     footer .info .bellatrix, footer .info .tweet {
       display: none; }
+    footer .info .contact ul li img {
+      display: none; }
   footer #theme {
     display: none; }
   @media screen and (min-width: 768px) {
@@ -281,15 +283,17 @@ footer {
         margin-bottom: 5vh;
         font-size: 2vh;
         text-transform: uppercase; }
-      footer .info .contact ul {
-        list-style-type: none; }
-      footer .info .contact li:last-child {
-        margin-top: 2vh; }
-      footer .info .contact li p {
-        display: inline-block;
-        margin-right: 1vh; }
-      footer .info .contact li i {
-        margin-left: 3vh; }
+        footer .info .contact h4 ul {
+          list-style-type: none; }
+        footer .info .contact h4 li:last-child {
+          margin-top: 2vh; }
+        footer .info .contact h4 li p {
+          display: inline-block;
+          margin-right: 1vh; }
+        footer .info .contact h4 li img {
+          display: block; }
+        footer .info .contact h4 li i {
+          margin-left: 3vh; }
       footer .info .tweet {
         display: block; }
         footer .info .tweet h4 {
