@@ -1,4 +1,9 @@
 #amber {
+
+  @media screen and (min-width: $sm) {
+    display: flex;
+  }
+
   .image {
     img {
       width: 100%;
@@ -6,10 +11,21 @@
   }
 
   .description {
+    padding-top: $top-space;
     img {
       display: none;
     }
   }
+
+  @media screen and (min-width: $sm){
+  .description {
+    padding-top: $top-space;
+    img {
+      display: block;
+    }
+  }
+
+}
 
   @media screen and (min-width: $sm) {
     #amber {

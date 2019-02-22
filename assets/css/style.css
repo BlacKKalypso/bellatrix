@@ -175,6 +175,9 @@ header {
 #project .image img {
   width: 100%; }
 
+#project .description img {
+  display: none; }
+
 @media screen and (min-width: 768px) {
   #project {
     position: relative;
@@ -187,7 +190,9 @@ header {
       position: absolute;
       right: 0; }
       #project .description h2 {
-        margin: 125px 20% 5% 20%; } }
+        margin: 125px 20% 5% 20%; }
+      #project .description img {
+        display: block; } }
 
 #coffee-shop {
   position: relative;
@@ -202,12 +207,29 @@ header {
     position: absolute; }
     #coffee-shop .description h2 {
       margin: 125px 20% 5% 20%; }
+    #coffee-shop .description img {
+      display: none; }
+    @media screen and (min-width: 768px) {
+      #coffee-shop .description img {
+        display: block; } }
+
+@media screen and (min-width: 768px) {
+  #amber {
+    display: flex; } }
 
 #amber .image img {
   width: 100%; }
 
-#amber .description img {
-  display: none; }
+#amber .description {
+  padding-top: 125px; }
+  #amber .description img {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  #amber .description {
+    padding-top: 125px; }
+    #amber .description img {
+      display: block; } }
 
 @media screen and (min-width: 768px) {
   #amber #amber {
@@ -224,17 +246,23 @@ header {
 footer {
   font-family: 'Lato', sans-serif;
   font-size: 12px; }
+  footer .info {
+    color: #e3e3e3;
+    background-color: #2a2a2a; }
+    footer .info .bellatrix, footer .info .tweet {
+      display: none; }
+  footer #theme {
+    display: none; }
   @media screen and (min-width: 768px) {
     footer .info {
       display: flex;
-      padding-top: 5%;
-      color: #e3e3e3;
-      background-color: #2a2a2a; }
+      padding-top: 5%; }
       footer .info .bellatrix,
       footer .info .contact,
       footer .info .tweet {
         width: 30%; }
       footer .info .bellatrix {
+        display: block;
         position: relative;
         text-align: center; }
         footer .info .bellatrix p:before {
@@ -262,21 +290,23 @@ footer {
         margin-right: 1vh; }
       footer .info .contact li i {
         margin-left: 3vh; }
-      footer .info .tweet h4 {
-        margin-bottom: 5vh;
-        font-size: 2vh;
-        text-transform: uppercase; }
-      footer .info .tweet div {
-        display: flex; }
-        footer .info .tweet div img {
-          margin-right: 2vh; }
-        footer .info .tweet div p {
-          padding-top: 1vh;
-          width: 60%; }
-          footer .info .tweet div p span {
-            color: #4d4d4d; }
-      footer .info .tweet .first {
-        margin-bottom: 2vh; }
+      footer .info .tweet {
+        display: block; }
+        footer .info .tweet h4 {
+          margin-bottom: 5vh;
+          font-size: 2vh;
+          text-transform: uppercase; }
+        footer .info .tweet div {
+          display: flex; }
+          footer .info .tweet div img {
+            margin-right: 2vh; }
+          footer .info .tweet div p {
+            padding-top: 1vh;
+            width: 60%; }
+            footer .info .tweet div p span {
+              color: #4d4d4d; }
+        footer .info .tweet .first {
+          margin-bottom: 2vh; }
     footer .make {
       position: relative;
       border-top: 3px solid #393939;
@@ -289,14 +319,15 @@ footer {
         width: 25px;
         content: "";
         border-bottom: solid 1px #e3e3e3; }
-      footer .make p {
+      footer .make #theme {
+        display: block;
         padding: 3vh 10vh;
         font-family: droid-serif, serif;
         font-size: 14px;
         font-style: italic;
         font-weight: 700;
         color: #e3e3e3; }
-      footer .make p:after {
+      footer .make #theme:after {
         position: absolute;
         top: 50%;
         right: 40%;
